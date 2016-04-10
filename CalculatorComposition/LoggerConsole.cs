@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace CalculatorComposition
 {
-    interface ILogger
+    class LoggerConsole : ILogger
     {
-        void Logging();
+        public void Logging()
+        {
+            Console.WriteLine("This is console logger");
+        }
     }
 }
